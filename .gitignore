@@ -1,8 +1,5 @@
-target
+/target/
 *.iml
-pegacorn-deployment-properties.iml
-.settings/org.eclipse.jdt.core.prefs
-.settings/org.eclipse.core.resources.prefs
-.project
 .classpath
-*.iml
+.project
+/.settings
