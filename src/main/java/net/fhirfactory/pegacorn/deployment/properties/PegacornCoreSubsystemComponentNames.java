@@ -31,6 +31,10 @@ public class PegacornCoreSubsystemComponentNames {
     private static final String LADON_EXTERNALISED_SERVICE_DEFAULT = "Ladon";
     private static final String LADON_SERVICE_DEFAULT = "Ladon-Core";
     private static final String LADON_PROCESSING_PLANT_DEFAULT = "Ladon-Core";
+    private static final String LADON_PROCESSING_PLANT_VERSION = "1.0.0";
+
+    private static final String LADON_EDGE_RECEIVE_FHIR_ALL_FROM_IRIS = "Port:Receive-FHIR-All-From-Iris";
+    private static final String LADON_EDGE_FORWARD_FHIR_ALL_TO_IRIS = "Port:Forward-FHIR-All-To-Iris";
 
     private static final String FHIRPIT_SUBSYSTEM_DEFAULT_PUBLIC = "FHIRPit";
     private static final String FHIRPIT_EXTERNALISED_SERVICE_DEFAULT_PUBLIC = "FHIRPit";
@@ -47,6 +51,8 @@ public class PegacornCoreSubsystemComponentNames {
     private static final String COMMUNICATE_IRIS_SERVICE_DEFAULT = "Communicate-Iris";
     private static final String COMMUNICATE_IRIS_PROCESSING_PLANT_DEFAULT = "Communicate-Iris";
     private static final String IRIS_MATRIX_APPLICATION_SERVICES_RECEIVER_PORT_ENDPOINT_NAME = "Iris-MatrixAppServices-Receiver-Port";
+    private static final String COMMUNICATE_IRIS_EDGE_RECEIVE_FHIR_ALL_FROM_LADON = "Port:Receive-FHIR-All-From-Ladon";
+    private static final String COMMUNICATE_IRIS_EDGE_FORWARD_FHIR_ALL_TO_LADON = "Port:Forward-FHIR-All-To-Ladon";
 
     private static final String COMMUNICATE_GRPSVR_DEFAULT = "Communicate-GrpSvr";
     private static final String COMMUNICATE_GRPSVR_EXTERNALISED_SERVICE_DEFAULT = "Communicate-GrpSvr";
@@ -83,6 +89,7 @@ public class PegacornCoreSubsystemComponentNames {
     private static final String HESTIA_DATASWAMP_SERVICE_DEFAULT = "Hestia-DataSwamp";
     private static final String HESTIA_DATASWAMP_PROCESSING_PLANT_DEFAULT = "Hestia-DataSwamp";
 
+    private static final String EDGE_RECEIVE_FHIR_ALL_ENDPOINT_NAME = "Port:Edge-Receive-FHIR-All";
     private static final String EDGE_RECEIVE_BASE_ENTITIES_ENDPOINT_NAME = "Port:Edge-Receive-Base-Entities";
     private static final String EDGE_RECEIVE_BASE_INDIVIDUALS_ENDPOINT_NAME = "Port:Edge-Receive-Base-Individuals";
     private static final String EDGE_RECEIVE_BASE_MANAGEMENT_ENDPOINT_NAME = "Port:Edge-Receive-Base-Management";
@@ -99,6 +106,7 @@ public class PegacornCoreSubsystemComponentNames {
     private static final String EDGE_RECEIVE_FOUNDATION_OTHER_ENDPOINT_NAME = "Port:Edge-Receive-Foundation-Other";
     private static final String EDGE_RECEIVE_FOUNDATION_TERMINOLOGY_ENDPOINT_NAME = "Port:Edge-Receive-Foundation-Terminology";
 
+    private static final String EDGE_FORWARD_FHIR_ALL_ENDPOINT_NAME = "Port:Edge-Forward-FHIR-All";
     private static final String EDGE_FORWARD_BASE_ENTITIES_ENDPOINT_NAME = "Port:Edge-Forward-Base-Entities";
     private static final String EDGE_FORWARD_BASE_INDIVIDUALS_ENDPOINT_NAME = "Port:Edge-Forward-Base-Individuals";
     private static final String EDGE_FORWARD_BASE_MANAGEMENT_ENDPOINT_NAME = "Port:Edge-Forward-Base_Management";
@@ -115,99 +123,132 @@ public class PegacornCoreSubsystemComponentNames {
     private static final String EDGE_FORWARD_FOUNDATION_OTHER_ENDPOINT_NAME = "Port:Edge-Forward-Foundation-Other";
     private static final String EDGE_FORWARD_FOUNDATION_TERMINOLOGY_ENDPOINT_NAME = "Port:Edge-Forward-Foundation-Terminology";
 
-    public static String getLadonSubsystemDefault() {
+    private static final String EDGE_ANSWER_ENDPOINT_NAME = "Port:Edge-Answer";
+
+    private static final String PETASOS_WATCHDOG_FINALISATION_SERVICE = "Port:Petasos-Watchdog-Finalisation-Service";
+    private static final String PETASOS_WATCHDOG_HEARTBEAT_SERVICE = "Port:Petasos-Watchdog-Heartbeat-Service";
+
+    public String getLadonEdgeReceiveFhirAllFromIris() {
+        return LADON_EDGE_RECEIVE_FHIR_ALL_FROM_IRIS;
+    }
+
+    public String getLadonEdgeForwardFhirAllToIris() {
+        return LADON_EDGE_FORWARD_FHIR_ALL_TO_IRIS;
+    }
+
+    public String getCommunicateIrisEdgeReceiveFhirAllFromLadon() {
+        return COMMUNICATE_IRIS_EDGE_RECEIVE_FHIR_ALL_FROM_LADON;
+    }
+
+    public String getCommunicateIrisEdgeForwardFhirAllToLadon() {
+        return COMMUNICATE_IRIS_EDGE_FORWARD_FHIR_ALL_TO_LADON;
+    }
+
+    public String getPetasosWatchdogFinalisationService() {
+        return PETASOS_WATCHDOG_FINALISATION_SERVICE;
+    }
+
+    public String getPetasosWatchdogHeartbeatService() {
+        return PETASOS_WATCHDOG_HEARTBEAT_SERVICE;
+    }
+
+    public String getLadonProcessingPlantVersion() {
+        return LADON_PROCESSING_PLANT_VERSION;
+    }
+
+    public String getLadonSubsystemDefault() {
         return LADON_SUBSYSTEM_DEFAULT;
     }
 
-    public static String getLadonExternalisedServiceDefault() {
+    public String getLadonExternalisedServiceDefault() {
         return LADON_EXTERNALISED_SERVICE_DEFAULT;
     }
 
-    public static String getLadonServiceDefault() {
+    public String getLadonServiceDefault() {
         return LADON_SERVICE_DEFAULT;
     }
 
-    public static String getLadonProcessingPlantDefault() {
+    public String getLadonProcessingPlantDefault() {
         return LADON_PROCESSING_PLANT_DEFAULT;
     }
 
-    public static String getFhirpitSubsystemDefaultPublic() {
+    public String getFhirpitSubsystemDefaultPublic() {
         return FHIRPIT_SUBSYSTEM_DEFAULT_PUBLIC;
     }
 
-    public static String getFhirpitExternalisedServiceDefaultPublic() {
+    public String getFhirpitExternalisedServiceDefaultPublic() {
         return FHIRPIT_EXTERNALISED_SERVICE_DEFAULT_PUBLIC;
     }
 
-    public static String getFhirpitServiceDefaultPublic() {
+    public String getFhirpitServiceDefaultPublic() {
         return FHIRPIT_SERVICE_DEFAULT_PUBLIC;
     }
 
-    public static String getFhirpitProcessingPlantDefaultPublic() {
+    public String getFhirpitProcessingPlantDefaultPublic() {
         return FHIRPIT_PROCESSING_PLANT_DEFAULT_PUBLIC;
     }
 
-    public static String getFhirpitSubsystemDefault() {
+    public String getFhirpitSubsystemDefault() {
         return FHIRPIT_SUBSYSTEM_DEFAULT;
     }
 
-    public static String getFhirpitExternalisedServiceDefault() {
+    public String getFhirpitExternalisedServiceDefault() {
         return FHIRPIT_EXTERNALISED_SERVICE_DEFAULT;
     }
 
-    public static String getFhirpitServiceDefault() {
+    public String getFhirpitServiceDefault() {
         return FHIRPIT_SERVICE_DEFAULT;
     }
 
-    public static String getFhirpitProcessingPlantDefault() {
+    public String getFhirpitProcessingPlantDefault() {
         return FHIRPIT_PROCESSING_PLANT_DEFAULT;
     }
 
-    public static String getCommunicateIrisDefault() {
+    public String getCommunicateIrisDefault() {
         return COMMUNICATE_IRIS_DEFAULT;
     }
 
-    public static String getCommunicateIrisExternalisedServiceDefault() {
+    public String getCommunicateIrisExternalisedServiceDefault() {
         return COMMUNICATE_IRIS_EXTERNALISED_SERVICE_DEFAULT;
     }
 
-    public static String getCommunicateIrisServiceDefault() {
+    public String getCommunicateIrisServiceDefault() {
         return COMMUNICATE_IRIS_SERVICE_DEFAULT;
     }
 
-    public static String getCommunicateIrisProcessingPlantDefault() {
+    public String getCommunicateIrisProcessingPlantDefault() {
         return COMMUNICATE_IRIS_PROCESSING_PLANT_DEFAULT;
     }
 
-    public static String getCommunicateGrpsvrDefault() {
+    public String getCommunicateGrpsvrDefault() {
         return COMMUNICATE_GRPSVR_DEFAULT;
     }
 
-    public static String getCommunicateGrpsvrExternalisedServiceDefault() {
+    public String getCommunicateGrpsvrExternalisedServiceDefault() {
         return COMMUNICATE_GRPSVR_EXTERNALISED_SERVICE_DEFAULT;
     }
 
-    public static String getCommunicateGrpsvrServiceDefault() {
+    public String getCommunicateGrpsvrServiceDefault() {
         return COMMUNICATE_GRPSVR_SERVICE_DEFAULT;
     }
 
-    public static String getCommunicateGrpsvrProcessingPlantDefault() {
+    public String getCommunicateGrpsvrProcessingPlantDefault() {
         return COMMUNICATE_GRPSVR_PROCESSING_PLANT_DEFAULT;
     }
 
-    public static String getCommunicateVoipbridgeDefault() {
+    public String getCommunicateVoipbridgeDefault() {
         return COMMUNICATE_VOIPBRIDGE_DEFAULT;
     }
 
-    public static String getCommunicateVoipbridgeExternalisedServiceDefault() {
+    public String getCommunicateVoipbridgeExternalisedServiceDefault() {
         return COMMUNICATE_VOIPBRIDGE_EXTERNALISED_SERVICE_DEFAULT;
     }
 
-    public static String getCommunicateVoipbridgeServiceDefault() {
+    public String getCommunicateVoipbridgeServiceDefault() {
         return COMMUNICATE_VOIPBRIDGE_SERVICE_DEFAULT;
     }
 
-    public static String getCommunicateVoipbridgeProcessingPlantDefault() {
+    public String getCommunicateVoipbridgeProcessingPlantDefault() {
         return COMMUNICATE_VOIPBRIDGE_PROCESSING_PLANT_DEFAULT;
     }
 
@@ -413,5 +454,17 @@ public class PegacornCoreSubsystemComponentNames {
 
     public static String getEdgeForwardFoundationTerminologyEndpointName() {
         return EDGE_FORWARD_FOUNDATION_TERMINOLOGY_ENDPOINT_NAME;
+    }
+
+    public static String getEdgeReceiveFhirAllEndpointName() {
+        return EDGE_RECEIVE_FHIR_ALL_ENDPOINT_NAME;
+    }
+
+    public static String getEdgeForwardFhirAllEndpointName() {
+        return EDGE_FORWARD_FHIR_ALL_ENDPOINT_NAME;
+    }
+
+    public static String getEdgeAnswerEndpointName() {
+        return EDGE_ANSWER_ENDPOINT_NAME;
     }
 }
