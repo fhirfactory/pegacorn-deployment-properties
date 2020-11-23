@@ -24,148 +24,148 @@ package net.fhirfactory.pegacorn.deployment.names;
 import javax.enterprise.context.ApplicationScoped;
 
 @ApplicationScoped
-public class PegacornFHIRPlaceAsVirtualDBPersistenceComponentNames {
+public class PegacornLadonVirtualDBPersistenceComponentNames {
     private static final String FOUNDATION_CONFORMANCE_VIRTUALDB_PERSISTENCE_SUBSYSTEM = "VirtualDB-Persistence-Conformance";
     private static final String FOUNDATION_CONFORMANCE_VIRTUALDB_PERSISTENCE_SUBSYSTEM_VERSION = "4.0.1";
     private static final String FOUNDATION_CONFORMANCE_VIRTUALDB_PERSISTENCE_EXTERNALISED_SERVICE = "VirtualDB-Persistence-Conformance";
-    private static final String FOUNDATION_CONFORMANCE_VIRTUALDB_PERSISTENCE_SERVICE = "conf-fhirplace";
-    private static final String FOUNDATION_CONFORMANCE_VIRTUALDB_PERSISTENCE_PROCESSING_PLANT = "conf-fhirplace";
+    private static final String FOUNDATION_CONFORMANCE_VIRTUALDB_PERSISTENCE_SERVICE = "vdb-foundation-conformance";
+    private static final String FOUNDATION_CONFORMANCE_VIRTUALDB_PERSISTENCE_PROCESSING_PLANT = "vdb-foundation-conformance";
     private static final String FOUNDATION_CONFORMANCE_VIRTUALDB_PERSISTENCE_PROCESSING_PLANT_VERSION = "4.0.1";
     private static final String FOUNDATION_CONFORMANCE_VIRTUALDB_PERSISTENCE_ENDPOINT_FHIR_API = "VirtualDB-Persistence-Foundation-Conformance-API";
 
     private static final String FOUNDATION_TERMINOLOGY_VIRTUALDB_PERSISTENCE_SUBSYSTEM = "VirtualDB-Persistence-Terminololgy";
     private static final String FOUNDATION_TERMINOLOGY_VIRTUALDB_PERSISTENCE_SUBSYSTEM_VERSION = "4.0.1";
     private static final String FOUNDATION_TERMINOLOGY_VIRTUALDB_PERSISTENCE_EXTERNALISED_SERVICE = "VirtualDB-Persistence-Terminololgy";
-    private static final String FOUNDATION_TERMINOLOGY_VIRTUALDB_PERSISTENCE_SERVICE = "term-fhirplace";
-    private static final String FOUNDATION_TERMINOLOGY_VIRTUALDB_PERSISTENCE_PROCESSING_PLANT = "term-fhirplace";
+    private static final String FOUNDATION_TERMINOLOGY_VIRTUALDB_PERSISTENCE_SERVICE = "vdb-foundation-terminology";
+    private static final String FOUNDATION_TERMINOLOGY_VIRTUALDB_PERSISTENCE_PROCESSING_PLANT = "vdb-foundation-terminology";
     private static final String FOUNDATION_TERMINOLOGY_VIRTUALDB_PERSISTENCE_PROCESSING_PLANT_VERSION = "4.0.1";
     private static final String FOUNDATION_TERMINOLOGY_VIRTUALDB_PERSISTENCE_ENDPOINT_FHIR_API = "VirtualDB-Persistence-Foundation-Terminology-API";
 
     private static final String FOUNDATION_SECURITY_VIRTUALDB_PERSISTENCE_SUBSYSTEM = "VirtualDB-Persistence-Security";
     private static final String FOUNDATION_SECURITY_VIRTUALDB_PERSISTENCE_SUBSYSTEM_VERSION = "4.0.1";
     private static final String FOUNDATION_SECURITY_VIRTUALDB_PERSISTENCE_EXTERNALISED_SERVICE = "VirtualDB-Persistence-Security";
-    private static final String FOUNDATION_SECURITY_VIRTUALDB_PERSISTENCE_SERVICE = "sec-fhirplace";
-    private static final String FOUNDATION_SECURITY_VIRTUALDB_PERSISTENCE_PROCESSING_PLANT = "sec-fhirplace";
+    private static final String FOUNDATION_SECURITY_VIRTUALDB_PERSISTENCE_SERVICE = "vdb-foundation-security";
+    private static final String FOUNDATION_SECURITY_VIRTUALDB_PERSISTENCE_PROCESSING_PLANT = "vdb-foundation-security";
     private static final String FOUNDATION_SECURITY_VIRTUALDB_PERSISTENCE_PROCESSING_PLANT_VERSION = "4.0.1";
     private static final String FOUNDATION_SECURITY_VIRTUALDB_PERSISTENCE_ENDPOINT_FHIR_API = "VirtualDB-Persistence-Foundation-Security-API";
 
     private static final String FOUNDATION_DOCUMENTS_VIRTUALDB_PERSISTENCE_SUBSYSTEM = "VirtualDB-Persistence-Documents";
     private static final String FOUNDATION_DOCUMENTS_VIRTUALDB_PERSISTENCE_SUBSYSTEM_VERSION = "4.0.1";
     private static final String FOUNDATION_DOCUMENTS_VIRTUALDB_PERSISTENCE_EXTERNALISED_SERVICE = "VirtualDB-Persistence-Documents";
-    private static final String FOUNDATION_DOCUMENTS_VIRTUALDB_PERSISTENCE_SERVICE = "doc-fhirplace";
-    private static final String FOUNDATION_DOCUMENTS_VIRTUALDB_PERSISTENCE_PROCESSING_PLANT = "doc-fhirplace";
+    private static final String FOUNDATION_DOCUMENTS_VIRTUALDB_PERSISTENCE_SERVICE = "vdb-foundation-documents";
+    private static final String FOUNDATION_DOCUMENTS_VIRTUALDB_PERSISTENCE_PROCESSING_PLANT = "vdb-foundation-documents";
     private static final String FOUNDATION_DOCUMENTS_VIRTUALDB_PERSISTENCE_PROCESSING_PLANT_VERSION = "4.0.1";
     private static final String FOUNDATION_DOCUMENTS_VIRTUALDB_PERSISTENCE_ENDPOINT_FHIR_API = "VirtualDB-Persistence-Foundation-Documents-API";
 
     private static final String FOUNDATION_OTHER_VIRTUALDB_PERSISTENCE_SUBSYSTEM = "VirtualDB-Persistence-Documents";
     private static final String FOUNDATION_OTHER_VIRTUALDB_PERSISTENCE_SUBSYSTEM_VERSION = "4.0.1";
     private static final String FOUNDATION_OTHER_VIRTUALDB_PERSISTENCE_EXTERNALISED_SERVICE = "VirtualDB-Persistence-Documents";
-    private static final String FOUNDATION_OTHER_VIRTUALDB_PERSISTENCE_SERVICE = "doc-fhirplace";
-    private static final String FOUNDATION_OTHER_VIRTUALDB_PERSISTENCE_PROCESSING_PLANT = "doc-fhirplace";
+    private static final String FOUNDATION_OTHER_VIRTUALDB_PERSISTENCE_SERVICE = "vdb-foundation-other";
+    private static final String FOUNDATION_OTHER_VIRTUALDB_PERSISTENCE_PROCESSING_PLANT = "vdb-foundation-other";
     private static final String FOUNDATION_OTHER_VIRTUALDB_PERSISTENCE_PROCESSING_PLANT_VERSION = "4.0.1";
     private static final String FOUNDATION_OTHER_VIRTUALDB_PERSISTENCE_ENDPOINT_FHIR_API = "VirtualDB-Persistence-Foundation-Other-API";
 
     private static final String BASE_INDIVIDUALS_VIRTUALDB_PERSISTENCE_SUBSYSTEM = "VirtualDB-Persistence-Individuals";
     private static final String BASE_INDIVIDUALS_VIRTUALDB_PERSISTENCE_SUBSYSTEM_VERSION = "4.0.1";
     private static final String BASE_INDIVIDUALS_VIRTUALDB_PERSISTENCE_EXTERNALISED_SERVICE = "VirtualDB-Persistence-Individuals";
-    private static final String BASE_INDIVIDUALS_VIRTUALDB_PERSISTENCE_SERVICE = "ind-fhirplace";
-    private static final String BASE_INDIVIDUALS_VIRTUALDB_PERSISTENCE_PROCESSING_PLANT = "ind-fhirplace";
+    private static final String BASE_INDIVIDUALS_VIRTUALDB_PERSISTENCE_SERVICE = "vdb-base-individuals";
+    private static final String BASE_INDIVIDUALS_VIRTUALDB_PERSISTENCE_PROCESSING_PLANT = "vdb-base-individuals";
     private static final String BASE_INDIVIDUALS_VIRTUALDB_PERSISTENCE_PROCESSING_PLANT_VERSION = "4.0.1";
     private static final String BASE_INDIVIDUALS_VIRTUALDB_PERSISTENCE_ENDPOINT_FHIR_API = "VirtualDB-Persistence-Base-Individuals-API";
 
     private static final String BASE_ENTITIES_VIRTUALDB_PERSISTENCE_SUBSYSTEM = "VirtualDB-Persistence-Entities";
     private static final String BASE_ENTITIES_VIRTUALDB_PERSISTENCE_SUBSYSTEM_VERSION = "4.0.1";
     private static final String BASE_ENTITIES_VIRTUALDB_PERSISTENCE_EXTERNALISED_SERVICE = "VirtualDB-Persistence-Entities";
-    private static final String BASE_ENTITIES_VIRTUALDB_PERSISTENCE_SERVICE = "ent-fhirplace";
-    private static final String BASE_ENTITIES_VIRTUALDB_PERSISTENCE_PROCESSING_PLANT = "ent-fhirplace";
+    private static final String BASE_ENTITIES_VIRTUALDB_PERSISTENCE_SERVICE = "vdb-base-entities";
+    private static final String BASE_ENTITIES_VIRTUALDB_PERSISTENCE_PROCESSING_PLANT = "vdb-base-entities";
     private static final String BASE_ENTITIES_VIRTUALDB_PERSISTENCE_PROCESSING_PLANT_VERSION = "4.0.1";
     private static final String BASE_ENTITIES_VIRTUALDB_PERSISTENCE_ENDPOINT_FHIR_API = "VirtualDB-Persistence-Base-Entities-API";
 
     private static final String BASE_WORKFLOW_VIRTUALDB_PERSISTENCE_SUBSYSTEM = "VirtualDB-Persistence-Workflow";
     private static final String BASE_WORKFLOW_VIRTUALDB_PERSISTENCE_SUBSYSTEM_VERSION = "4.0.1";
     private static final String BASE_WORKFLOW_VIRTUALDB_PERSISTENCE_EXTERNALISED_SERVICE = "VirtualDB-Persistence-Workflow";
-    private static final String BASE_WORKFLOW_VIRTUALDB_PERSISTENCE_SERVICE = "work-fhirplace";
-    private static final String BASE_WORKFLOW_VIRTUALDB_PERSISTENCE_PROCESSING_PLANT = "work-fhirplace";
+    private static final String BASE_WORKFLOW_VIRTUALDB_PERSISTENCE_SERVICE = "vdb-base-workflow";
+    private static final String BASE_WORKFLOW_VIRTUALDB_PERSISTENCE_PROCESSING_PLANT = "vdb-base-workflow";
     private static final String BASE_WORKFLOW_VIRTUALDB_PERSISTENCE_PROCESSING_PLANT_VERSION = "4.0.1";
     private static final String BASE_WORKFLOW_VIRTUALDB_PERSISTENCE_ENDPOINT_FHIR_API = "VirtualDB-Persistence-Base-Workflow-API";
 
     private static final String BASE_MANAGEMENT_VIRTUALDB_PERSISTENCE_SUBSYSTEM = "VirtualDB-Persistence-Management";
     private static final String BASE_MANAGEMENT_VIRTUALDB_PERSISTENCE_SUBSYSTEM_VERSION = "4.0.1";
     private static final String BASE_MANAGEMENT_VIRTUALDB_PERSISTENCE_EXTERNALISED_SERVICE = "VirtualDB-Persistence-Management";
-    private static final String BASE_MANAGEMENT_VIRTUALDB_PERSISTENCE_SERVICE = "mgt-fhirplace";
-    private static final String BASE_MANAGEMENT_VIRTUALDB_PERSISTENCE_PROCESSING_PLANT = "mgt-fhirplace";
+    private static final String BASE_MANAGEMENT_VIRTUALDB_PERSISTENCE_SERVICE = "vdb-base-management";
+    private static final String BASE_MANAGEMENT_VIRTUALDB_PERSISTENCE_PROCESSING_PLANT = "vdb-base-management";
     private static final String BASE_MANAGEMENT_VIRTUALDB_PERSISTENCE_PROCESSING_PLANT_VERSION = "4.0.1";
     private static final String BASE_MANAGEMENT_VIRTUALDB_PERSISTENCE_ENDPOINT_FHIR_API = "VirtualDB-Persistence-Base-Management-API";
 
     private static final String CLINICAL_SUMMARY_VIRTUALDB_PERSISTENCE_SUBSYSTEM = "VirtualDB-Persistence-Clinical-Summary";
     private static final String CLINICAL_SUMMARY_VIRTUALDB_PERSISTENCE_SUBSYSTEM_VERSION = "4.0.1";
     private static final String CLINICAL_SUMMARY_VIRTUALDB_PERSISTENCE_EXTERNALISED_SERVICE = "VirtualDB-Persistence-Clinical-Summary";
-    private static final String CLINICAL_SUMMARY_VIRTUALDB_PERSISTENCE_SERVICE = "sum-fhirplace";
-    private static final String CLINICAL_SUMMARY_VIRTUALDB_PERSISTENCE_PROCESSING_PLANT = "sum-fhirplace";
+    private static final String CLINICAL_SUMMARY_VIRTUALDB_PERSISTENCE_SERVICE = "vdb-clinical-summary";
+    private static final String CLINICAL_SUMMARY_VIRTUALDB_PERSISTENCE_PROCESSING_PLANT = "vdb-clinical-summary";
     private static final String CLINICAL_SUMMARY_VIRTUALDB_PERSISTENCE_PROCESSING_PLANT_VERSION = "4.0.1";
     private static final String CLINICAL_SUMMARY_VIRTUALDB_PERSISTENCE_ENDPOINT_FHIR_API = "VirtualDB-Persistence-Clinical-Summary-API";
 
     private static final String CLINICAL_DIAGNOSTICS_VIRTUALDB_PERSISTENCE_SUBSYSTEM = "VirtualDB-Persistence-Clinical-Diagnostics";
     private static final String CLINICAL_DIAGNOSTICS_VIRTUALDB_PERSISTENCE_SUBSYSTEM_VERSION = "4.0.1";
     private static final String CLINICAL_DIAGNOSTICS_VIRTUALDB_PERSISTENCE_EXTERNALISED_SERVICE = "VirtualDB-Persistence-Clinical-Diagnostics";
-    private static final String CLINICAL_DIAGNOSTICS_VIRTUALDB_PERSISTENCE_SERVICE = "diag-fhirplace";
-    private static final String CLINICAL_DIAGNOSTICS_VIRTUALDB_PERSISTENCE_PROCESSING_PLANT = "diag-fhirplace";
+    private static final String CLINICAL_DIAGNOSTICS_VIRTUALDB_PERSISTENCE_SERVICE = "vdb-clinical-diagnostics";
+    private static final String CLINICAL_DIAGNOSTICS_VIRTUALDB_PERSISTENCE_PROCESSING_PLANT = "vdb-clinical-diagnostics";
     private static final String CLINICAL_DIAGNOSTICS_VIRTUALDB_PERSISTENCE_PROCESSING_PLANT_VERSION = "4.0.1";
     private static final String CLINICAL_DIAGNOSTICS_VIRTUALDB_PERSISTENCE_ENDPOINT_FHIR_API = "VirtualDB-Persistence-Clinical-Diagnostics-API";
 
     private static final String CLINICAL_MEDICATIONS_VIRTUALDB_PERSISTENCE_SUBSYSTEM = "VirtualDB-Persistence-Clinical-Medications";
     private static final String CLINICAL_MEDICATIONS_VIRTUALDB_PERSISTENCE_SUBSYSTEM_VERSION = "4.0.1";
     private static final String CLINICAL_MEDICATIONS_VIRTUALDB_PERSISTENCE_EXTERNALISED_SERVICE = "VirtualDB-Persistence-Clinical-Medications";
-    private static final String CLINICAL_MEDICATIONS_VIRTUALDB_PERSISTENCE_SERVICE = "med-fhirplace";
-    private static final String CLINICAL_MEDICATIONS_VIRTUALDB_PERSISTENCE_PROCESSING_PLANT = "med-fhirplace";
+    private static final String CLINICAL_MEDICATIONS_VIRTUALDB_PERSISTENCE_SERVICE = "vdb-clinical-medications";
+    private static final String CLINICAL_MEDICATIONS_VIRTUALDB_PERSISTENCE_PROCESSING_PLANT = "vdb-clinical-medications";
     private static final String CLINICAL_MEDICATIONS_VIRTUALDB_PERSISTENCE_PROCESSING_PLANT_VERSION = "4.0.1";
     private static final String CLINICAL_MEDICATIONS_VIRTUALDB_PERSISTENCE_ENDPOINT_FHIR_API = "VirtualDB-Persistence-Clinical-Medications-API";
 
     private static final String CLINICAL_CARE_PROVISION_VIRTUALDB_PERSISTENCE_SUBSYSTEM = "VirtualDB-Persistence-Clinical-CareProvision";
     private static final String CLINICAL_CARE_PROVISION_VIRTUALDB_PERSISTENCE_SUBSYSTEM_VERSION = "4.0.1";
     private static final String CLINICAL_CARE_PROVISION_VIRTUALDB_PERSISTENCE_EXTERNALISED_SERVICE = "VirtualDB-Persistence-Clinical-CareProvision";
-    private static final String CLINICAL_CARE_PROVISION_VIRTUALDB_PERSISTENCE_SERVICE = "care-fhirplace";
-    private static final String CLINICAL_CARE_PROVISION_VIRTUALDB_PERSISTENCE_PROCESSING_PLANT = "care-fhirplace";
+    private static final String CLINICAL_CARE_PROVISION_VIRTUALDB_PERSISTENCE_SERVICE = "vdb-clinical-care-provision";
+    private static final String CLINICAL_CARE_PROVISION_VIRTUALDB_PERSISTENCE_PROCESSING_PLANT = "vdb-clinical-care-provision";
     private static final String CLINICAL_CARE_PROVISION_VIRTUALDB_PERSISTENCE_PROCESSING_PLANT_VERSION = "4.0.1";
     private static final String CLINICAL_CARE_PROVISION_VIRTUALDB_PERSISTENCE_ENDPOINT_FHIR_API = "VirtualDB-Persistence-Clinical-CareProvision-API";
 
     private static final String CLINICAL_REQUEST_AND_RESPONSE_VIRTUALDB_PERSISTENCE_SUBSYSTEM = "VirtualDB-Persistence-Clinical-RequestAndResponse";
     private static final String CLINICAL_REQUEST_AND_RESPONSE_VIRTUALDB_PERSISTENCE_SUBSYSTEM_VERSION = "4.0.1";
     private static final String CLINICAL_REQUEST_AND_RESPONSE_VIRTUALDB_PERSISTENCE_EXTERNALISED_SERVICE = "VirtualDB-Persistence-Clinical-RequestAndResponse";
-    private static final String CLINICAL_REQUEST_AND_RESPONSE_VIRTUALDB_PERSISTENCE_SERVICE = "randr-fhirplace";
-    private static final String CLINICAL_REQUEST_AND_RESPONSE_VIRTUALDB_PERSISTENCE_PROCESSING_PLANT = "randr-fhirplace";
+    private static final String CLINICAL_REQUEST_AND_RESPONSE_VIRTUALDB_PERSISTENCE_SERVICE = "vdb-clinical-request-and-response";
+    private static final String CLINICAL_REQUEST_AND_RESPONSE_VIRTUALDB_PERSISTENCE_PROCESSING_PLANT = "vdb-clinical-request-and-response";
     private static final String CLINICAL_REQUEST_AND_RESPONSE_VIRTUALDB_PERSISTENCE_PROCESSING_PLANT_VERSION = "4.0.1";
     private static final String CLINICAL_REQUEST_AND_RESPONSE_VIRTUALDB_PERSISTENCE_ENDPOINT_FHIR_API = "VirtualDB-Persistence-Clinical-RequestAndResponse-API";
 
     private static final String FINANCIAL_SUPPORT_VIRTUALDB_PERSISTENCE_SUBSYSTEM = "VirtualDB-Persistence-Financial-Support";
     private static final String FINANCIAL_SUPPORT_VIRTUALDB_PERSISTENCE_SUBSYSTEM_VERSION = "4.0.1";
     private static final String FINANCIAL_SUPPORT_VIRTUALDB_PERSISTENCE_EXTERNALISED_SERVICE = "VirtualDB-Persistence-Financial-Support";
-    private static final String FINANCIAL_SUPPORT_VIRTUALDB_PERSISTENCE_SERVICE = "finsup-fhirplace";
-    private static final String FINANCIAL_SUPPORT_VIRTUALDB_PERSISTENCE_PROCESSING_PLANT = "finsup-fhirplace";
+    private static final String FINANCIAL_SUPPORT_VIRTUALDB_PERSISTENCE_SERVICE = "vdb-financial-support";
+    private static final String FINANCIAL_SUPPORT_VIRTUALDB_PERSISTENCE_PROCESSING_PLANT = "vdb-financial-support";
     private static final String FINANCIAL_SUPPORT_VIRTUALDB_PERSISTENCE_PROCESSING_PLANT_VERSION = "4.0.1";
     private static final String FINANCIAL_SUPPORT_VIRTUALDB_PERSISTENCE_ENDPOINT_FHIR_API = "VirtualDB-Persistence-Financial-Support-API";
 
     private static final String FINANCIAL_BILLING_VIRTUALDB_PERSISTENCE_SUBSYSTEM = "VirtualDB-Persistence-Financial-Billing";
     private static final String FINANCIAL_BILLING_VIRTUALDB_PERSISTENCE_SUBSYSTEM_VERSION = "4.0.1";
     private static final String FINANCIAL_BILLING_VIRTUALDB_PERSISTENCE_EXTERNALISED_SERVICE = "VirtualDB-Persistence-Financial-Billing";
-    private static final String FINANCIAL_BILLING_VIRTUALDB_PERSISTENCE_SERVICE = "bill-fhirplace";
-    private static final String FINANCIAL_BILLING_VIRTUALDB_PERSISTENCE_PROCESSING_PLANT = "bill-fhirplace";
+    private static final String FINANCIAL_BILLING_VIRTUALDB_PERSISTENCE_SERVICE = "vdb-financial-billing";
+    private static final String FINANCIAL_BILLING_VIRTUALDB_PERSISTENCE_PROCESSING_PLANT = "vdb-financial-billing";
     private static final String FINANCIAL_BILLING_VIRTUALDB_PERSISTENCE_PROCESSING_PLANT_VERSION = "4.0.1";
     private static final String FINANCIAL_BILLING_VIRTUALDB_PERSISTENCE_ENDPOINT_FHIR_API = "VirtualDB-Persistence-Financial-Billing-API";
 
     private static final String FINANCIAL_PAYMENT_VIRTUALDB_PERSISTENCE_SUBSYSTEM = "VirtualDB-Persistence-Financial-Payment";
     private static final String FINANCIAL_PAYMENT_VIRTUALDB_PERSISTENCE_SUBSYSTEM_VERSION = "4.0.1";
     private static final String FINANCIAL_PAYMENT_VIRTUALDB_PERSISTENCE_EXTERNALISED_SERVICE = "VirtualDB-Persistence-Financial-Payment";
-    private static final String FINANCIAL_PAYMENT_VIRTUALDB_PERSISTENCE_SERVICE = "pmnt-fhirplace";
-    private static final String FINANCIAL_PAYMENT_VIRTUALDB_PERSISTENCE_PROCESSING_PLANT = "pmnt-fhirplace";
+    private static final String FINANCIAL_PAYMENT_VIRTUALDB_PERSISTENCE_SERVICE = "vdb-financial-payment";
+    private static final String FINANCIAL_PAYMENT_VIRTUALDB_PERSISTENCE_PROCESSING_PLANT = "vdb-financial-payment";
     private static final String FINANCIAL_PAYMENT_VIRTUALDB_PERSISTENCE_PROCESSING_PLANT_VERSION = "4.0.1";
     private static final String FINANCIAL_PAYMENT_VIRTUALDB_PERSISTENCE_ENDPOINT_FHIR_API = "VirtualDB-Persistence-Financial-Payment-API";
 
     private static final String FINANCIAL_GENERAL_VIRTUALDB_PERSISTENCE_SUBSYSTEM = "VirtualDB-Persistence-Financial-General";
     private static final String FINANCIAL_GENERAL_VIRTUALDB_PERSISTENCE_SUBSYSTEM_VERSION = "4.0.1";
     private static final String FINANCIAL_GENERAL_VIRTUALDB_PERSISTENCE_EXTERNALISED_SERVICE = "VirtualDB-Persistence-Financial-General";
-    private static final String FINANCIAL_GENERAL_VIRTUALDB_PERSISTENCE_SERVICE = "fingen-fhirplace";
-    private static final String FINANCIAL_GENERAL_VIRTUALDB_PERSISTENCE_PROCESSING_PLANT = "fingen-fhirplace";
+    private static final String FINANCIAL_GENERAL_VIRTUALDB_PERSISTENCE_SERVICE = "vdb-financial-general";
+    private static final String FINANCIAL_GENERAL_VIRTUALDB_PERSISTENCE_PROCESSING_PLANT = "vdb-financil-general";
     private static final String FINANCIAL_GENERAL_VIRTUALDB_PERSISTENCE_PROCESSING_PLANT_VERSION = "4.0.1";
     private static final String FINANCIAL_GENERAL_VIRTUALDB_PERSISTENCE_ENDPOINT_FHIR_API = "VirtualDB-Persistence-Financial-General-API";
 
