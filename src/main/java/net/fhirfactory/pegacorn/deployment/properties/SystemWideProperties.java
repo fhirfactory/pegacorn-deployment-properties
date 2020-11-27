@@ -80,4 +80,19 @@ public class SystemWideProperties {
     public static String getProcessingEngineQualifier() {
         return PROCESSING_ENGINE_QUALIFIER;
     }
+
+    private static final String PEGACORN_INTERNAL_FHIR_RESOURCE_R4_PATH = "/pegacorn/internal/fhir/r4";
+    private static final String PEGACORN_EXPOSED_FHIR_RESOURCE_R4_PATH = "/fhir/r4";
+
+    public static String getSystemDeploymentId() {
+        return SYSTEM_DEPLOYMENT_ID;
+    }
+
+    public static String getPegacornInternalFhirResourceR4Path() {
+        return PEGACORN_INTERNAL_FHIR_RESOURCE_R4_PATH;
+    }
+
+    public static String getPegacornExposedFhirResourceR4Path() {
+        return PEGACORN_EXPOSED_FHIR_RESOURCE_R4_PATH;
+    }
 }
