@@ -25,149 +25,160 @@ import javax.enterprise.context.ApplicationScoped;
 
 @ApplicationScoped
 public class PegacornFHIRPlaceMDRComponentNames {
-    private static final String FOUNDATION_CONFORMANCE_PEGACORN_MDR_SUBSYSTEM = "Pegacorn-MDR-Conformance";
+    private static final String PEGACORN_FHIRPLACE_MDR_NAME = "Pegacorn-FHIRPlace-MDR";
+    private static final String PEGACORN_FHIRPLACE_MDR_VERSION = "1.0.0";
+
+    public static String getPegacornFHIRPlaceMDRName() {
+        return PEGACORN_FHIRPLACE_MDR_NAME;
+    }
+
+    public static String getPegacornFHIRPlaceMDRVersion() {
+        return PEGACORN_FHIRPLACE_MDR_VERSION;
+    }
+
+    private static final String FOUNDATION_CONFORMANCE_PEGACORN_MDR_SUBSYSTEM = "Pegacorn-FHIRPlace-MDR-Conformance";
     private static final String FOUNDATION_CONFORMANCE_PEGACORN_MDR_SUBSYSTEM_VERSION = "4.0.1";
-    private static final String FOUNDATION_CONFORMANCE_PEGACORN_MDR_EXTERNALISED_SERVICE = "Pegacorn-MDR-Conformance";
-    private static final String FOUNDATION_CONFORMANCE_PEGACORN_MDR_SERVICE = "fhirplace-foundation-conformance";
-    private static final String FOUNDATION_CONFORMANCE_PEGACORN_MDR_PROCESSING_PLANT = "fhirplace-foundation-conformance";
+    private static final String FOUNDATION_CONFORMANCE_PEGACORN_MDR_EXTERNALISED_SERVICE = "Pegacorn-FHIRPlace-MDR-Conformance";
+    private static final String FOUNDATION_CONFORMANCE_PEGACORN_MDR_SERVICE = "fhirplace-mdr-foundation-conformance";
+    private static final String FOUNDATION_CONFORMANCE_PEGACORN_MDR_PROCESSING_PLANT = "fhirplace-mdr-foundation-conformance";
     private static final String FOUNDATION_CONFORMANCE_PEGACORN_MDR_PROCESSING_PLANT_VERSION = "4.0.1";
-    private static final String FOUNDATION_CONFORMANCE_PEGACORN_MDR_ENDPOINT_FHIR_API = "Pegacorn-MDR-Foundation-Conformance-API";
+    private static final String FOUNDATION_CONFORMANCE_PEGACORN_MDR_ENDPOINT_FHIR_API = "Pegacorn-FHIRPlace-MDR-Foundation-Conformance-API";
 
-    private static final String FOUNDATION_TERMINOLOGY_PEGACORN_MDR_SUBSYSTEM = "Pegacorn-MDR-Terminololgy";
+    private static final String FOUNDATION_TERMINOLOGY_PEGACORN_MDR_SUBSYSTEM = "Pegacorn-FHIRPlace-MDR-Terminololgy";
     private static final String FOUNDATION_TERMINOLOGY_PEGACORN_MDR_SUBSYSTEM_VERSION = "4.0.1";
-    private static final String FOUNDATION_TERMINOLOGY_PEGACORN_MDR_EXTERNALISED_SERVICE = "Pegacorn-MDR-Terminololgy";
-    private static final String FOUNDATION_TERMINOLOGY_PEGACORN_MDR_SERVICE = "fhirplace-foundation-terminology";
-    private static final String FOUNDATION_TERMINOLOGY_PEGACORN_MDR_PROCESSING_PLANT = "fhirplace-foundation-terminology";
+    private static final String FOUNDATION_TERMINOLOGY_PEGACORN_MDR_EXTERNALISED_SERVICE = "Pegacorn-FHIRPlace-MDR-Terminololgy";
+    private static final String FOUNDATION_TERMINOLOGY_PEGACORN_MDR_SERVICE = "fhirplace-mdr-foundation-terminology";
+    private static final String FOUNDATION_TERMINOLOGY_PEGACORN_MDR_PROCESSING_PLANT = "fhirplace-mdr-foundation-terminology";
     private static final String FOUNDATION_TERMINOLOGY_PEGACORN_MDR_PROCESSING_PLANT_VERSION = "4.0.1";
-    private static final String FOUNDATION_TERMINOLOGY_PEGACORN_MDR_ENDPOINT_FHIR_API = "Pegacorn-MDR-Foundation-Terminology-API";
+    private static final String FOUNDATION_TERMINOLOGY_PEGACORN_MDR_ENDPOINT_FHIR_API = "Pegacorn-FHIRPlace-MDR-Foundation-Terminology-API";
 
-    private static final String FOUNDATION_SECURITY_PEGACORN_MDR_SUBSYSTEM = "Pegacorn-MDR-Security";
+    private static final String FOUNDATION_SECURITY_PEGACORN_MDR_SUBSYSTEM = "Pegacorn-FHIRPlace-MDR-Security";
     private static final String FOUNDATION_SECURITY_PEGACORN_MDR_SUBSYSTEM_VERSION = "4.0.1";
-    private static final String FOUNDATION_SECURITY_PEGACORN_MDR_EXTERNALISED_SERVICE = "Pegacorn-MDR-Security";
+    private static final String FOUNDATION_SECURITY_PEGACORN_MDR_EXTERNALISED_SERVICE = "Pegacorn-FHIRPlace-MDR-Security";
     private static final String FOUNDATION_SECURITY_PEGACORN_MDR_SERVICE = "fhirplace-foundation-security";
     private static final String FOUNDATION_SECURITY_PEGACORN_MDR_PROCESSING_PLANT = "fhirplace-foundation-security";
     private static final String FOUNDATION_SECURITY_PEGACORN_MDR_PROCESSING_PLANT_VERSION = "4.0.1";
-    private static final String FOUNDATION_SECURITY_PEGACORN_MDR_ENDPOINT_FHIR_API = "Pegacorn-MDR-Foundation-Security-API";
+    private static final String FOUNDATION_SECURITY_PEGACORN_MDR_ENDPOINT_FHIR_API = "Pegacorn-FHIRPlace-MDR-Foundation-Security-API";
 
-    private static final String FOUNDATION_DOCUMENTS_PEGACORN_MDR_SUBSYSTEM = "Pegacorn-MDR-Documents";
+    private static final String FOUNDATION_DOCUMENTS_PEGACORN_MDR_SUBSYSTEM = "Pegacorn-FHIRPlace-MDR-Documents";
     private static final String FOUNDATION_DOCUMENTS_PEGACORN_MDR_SUBSYSTEM_VERSION = "4.0.1";
-    private static final String FOUNDATION_DOCUMENTS_PEGACORN_MDR_EXTERNALISED_SERVICE = "Pegacorn-MDR-Documents";
+    private static final String FOUNDATION_DOCUMENTS_PEGACORN_MDR_EXTERNALISED_SERVICE = "Pegacorn-FHIRPlace-MDR-Documents";
     private static final String FOUNDATION_DOCUMENTS_PEGACORN_MDR_SERVICE = "fhirplace-foundation-documents";
     private static final String FOUNDATION_DOCUMENTS_PEGACORN_MDR_PROCESSING_PLANT = "fhirplace-foundation-documents";
     private static final String FOUNDATION_DOCUMENTS_PEGACORN_MDR_PROCESSING_PLANT_VERSION = "4.0.1";
-    private static final String FOUNDATION_DOCUMENTS_PEGACORN_MDR_ENDPOINT_FHIR_API = "Pegacorn-MDR-Foundation-Documents-API";
+    private static final String FOUNDATION_DOCUMENTS_PEGACORN_MDR_ENDPOINT_FHIR_API = "Pegacorn-FHIRPlace-MDR-Foundation-Documents-API";
 
-    private static final String FOUNDATION_OTHER_PEGACORN_MDR_SUBSYSTEM = "Pegacorn-MDR-Documents";
+    private static final String FOUNDATION_OTHER_PEGACORN_MDR_SUBSYSTEM = "Pegacorn-FHIRPlace-MDR-Documents";
     private static final String FOUNDATION_OTHER_PEGACORN_MDR_SUBSYSTEM_VERSION = "4.0.1";
-    private static final String FOUNDATION_OTHER_PEGACORN_MDR_EXTERNALISED_SERVICE = "Pegacorn-MDR-Documents";
+    private static final String FOUNDATION_OTHER_PEGACORN_MDR_EXTERNALISED_SERVICE = "Pegacorn-FHIRPlace-MDR-Documents";
     private static final String FOUNDATION_OTHER_PEGACORN_MDR_SERVICE = "fhirplace-foundation-other";
     private static final String FOUNDATION_OTHER_PEGACORN_MDR_PROCESSING_PLANT = "fhirplace-foundation-other";
     private static final String FOUNDATION_OTHER_PEGACORN_MDR_PROCESSING_PLANT_VERSION = "4.0.1";
-    private static final String FOUNDATION_OTHER_PEGACORN_MDR_ENDPOINT_FHIR_API = "Pegacorn-MDR-Foundation-Other-API";
+    private static final String FOUNDATION_OTHER_PEGACORN_MDR_ENDPOINT_FHIR_API = "Pegacorn-FHIRPlace-MDR-Foundation-Other-API";
 
-    private static final String BASE_INDIVIDUALS_PEGACORN_MDR_SUBSYSTEM = "Pegacorn-MDR-Individuals";
+    private static final String BASE_INDIVIDUALS_PEGACORN_MDR_SUBSYSTEM = "Pegacorn-FHIRPlace-MDR-Individuals";
     private static final String BASE_INDIVIDUALS_PEGACORN_MDR_SUBSYSTEM_VERSION = "4.0.1";
-    private static final String BASE_INDIVIDUALS_PEGACORN_MDR_EXTERNALISED_SERVICE = "Pegacorn-MDR-Individuals";
-    private static final String BASE_INDIVIDUALS_PEGACORN_MDR_SERVICE = "ind-fhirplace";
-    private static final String BASE_INDIVIDUALS_PEGACORN_MDR_PROCESSING_PLANT = "ind-fhirplace";
+    private static final String BASE_INDIVIDUALS_PEGACORN_MDR_EXTERNALISED_SERVICE = "Pegacorn-FHIRPlace-MDR-Individuals";
+    private static final String BASE_INDIVIDUALS_PEGACORN_MDR_SERVICE = "fhirplace-base-individuals";
+    private static final String BASE_INDIVIDUALS_PEGACORN_MDR_PROCESSING_PLANT = "fhirplace-base-individuals";
     private static final String BASE_INDIVIDUALS_PEGACORN_MDR_PROCESSING_PLANT_VERSION = "4.0.1";
-    private static final String BASE_INDIVIDUALS_PEGACORN_MDR_ENDPOINT_FHIR_API = "Pegacorn-MDR-Base-Individuals-API";
+    private static final String BASE_INDIVIDUALS_PEGACORN_MDR_ENDPOINT_FHIR_API = "Pegacorn-FHIRPlace-MDR-Base-Individuals-API";
 
-    private static final String BASE_ENTITIES_PEGACORN_MDR_SUBSYSTEM = "Pegacorn-MDR-Entities";
+    private static final String BASE_ENTITIES_PEGACORN_MDR_SUBSYSTEM = "Pegacorn-FHIRPlace-MDR-Entities";
     private static final String BASE_ENTITIES_PEGACORN_MDR_SUBSYSTEM_VERSION = "4.0.1";
-    private static final String BASE_ENTITIES_PEGACORN_MDR_EXTERNALISED_SERVICE = "Pegacorn-MDR-Entities";
-    private static final String BASE_ENTITIES_PEGACORN_MDR_SERVICE = "ent-fhirplace";
-    private static final String BASE_ENTITIES_PEGACORN_MDR_PROCESSING_PLANT = "ent-fhirplace";
+    private static final String BASE_ENTITIES_PEGACORN_MDR_EXTERNALISED_SERVICE = "Pegacorn-FHIRPlace-MDR-Entities";
+    private static final String BASE_ENTITIES_PEGACORN_MDR_SERVICE = "fhirplace-base-entities";
+    private static final String BASE_ENTITIES_PEGACORN_MDR_PROCESSING_PLANT = "fhirplace-entities";
     private static final String BASE_ENTITIES_PEGACORN_MDR_PROCESSING_PLANT_VERSION = "4.0.1";
-    private static final String BASE_ENTITIES_PEGACORN_MDR_ENDPOINT_FHIR_API = "Pegacorn-MDR-Base-Entities-API";
+    private static final String BASE_ENTITIES_PEGACORN_MDR_ENDPOINT_FHIR_API = "Pegacorn-FHIRPlace-MDR-Base-Entities-API";
 
-    private static final String BASE_WORKFLOW_PEGACORN_MDR_SUBSYSTEM = "Pegacorn-MDR-Workflow";
+    private static final String BASE_WORKFLOW_PEGACORN_MDR_SUBSYSTEM = "Pegacorn-FHIRPlace-MDR-Workflow";
     private static final String BASE_WORKFLOW_PEGACORN_MDR_SUBSYSTEM_VERSION = "4.0.1";
-    private static final String BASE_WORKFLOW_PEGACORN_MDR_EXTERNALISED_SERVICE = "Pegacorn-MDR-Workflow";
-    private static final String BASE_WORKFLOW_PEGACORN_MDR_SERVICE = "work-fhirplace";
-    private static final String BASE_WORKFLOW_PEGACORN_MDR_PROCESSING_PLANT = "work-fhirplace";
+    private static final String BASE_WORKFLOW_PEGACORN_MDR_EXTERNALISED_SERVICE = "Pegacorn-FHIRPlace-MDR-Workflow";
+    private static final String BASE_WORKFLOW_PEGACORN_MDR_SERVICE = "fhirplace-base-workflow";
+    private static final String BASE_WORKFLOW_PEGACORN_MDR_PROCESSING_PLANT = "fhirplace-base-workflow";
     private static final String BASE_WORKFLOW_PEGACORN_MDR_PROCESSING_PLANT_VERSION = "4.0.1";
-    private static final String BASE_WORKFLOW_PEGACORN_MDR_ENDPOINT_FHIR_API = "Pegacorn-MDR-Base-Workflow-API";
+    private static final String BASE_WORKFLOW_PEGACORN_MDR_ENDPOINT_FHIR_API = "Pegacorn-FHIRPlace-MDR-Base-Workflow-API";
 
-    private static final String BASE_MANAGEMENT_PEGACORN_MDR_SUBSYSTEM = "Pegacorn-MDR-Management";
+    private static final String BASE_MANAGEMENT_PEGACORN_MDR_SUBSYSTEM = "Pegacorn-FHIRPlace-MDR-Management";
     private static final String BASE_MANAGEMENT_PEGACORN_MDR_SUBSYSTEM_VERSION = "4.0.1";
-    private static final String BASE_MANAGEMENT_PEGACORN_MDR_EXTERNALISED_SERVICE = "Pegacorn-MDR-Management";
-    private static final String BASE_MANAGEMENT_PEGACORN_MDR_SERVICE = "mgt-fhirplace";
-    private static final String BASE_MANAGEMENT_PEGACORN_MDR_PROCESSING_PLANT = "mgt-fhirplace";
+    private static final String BASE_MANAGEMENT_PEGACORN_MDR_EXTERNALISED_SERVICE = "Pegacorn-FHIRPlace-MDR-Management";
+    private static final String BASE_MANAGEMENT_PEGACORN_MDR_SERVICE = "fhirplace-mgt-fhirplace";
+    private static final String BASE_MANAGEMENT_PEGACORN_MDR_PROCESSING_PLANT = "fhirplace-mgt-fhirplace";
     private static final String BASE_MANAGEMENT_PEGACORN_MDR_PROCESSING_PLANT_VERSION = "4.0.1";
-    private static final String BASE_MANAGEMENT_PEGACORN_MDR_ENDPOINT_FHIR_API = "Pegacorn-MDR-Base-Management-API";
+    private static final String BASE_MANAGEMENT_PEGACORN_MDR_ENDPOINT_FHIR_API = "Pegacorn-FHIRPlace-MDR-Base-Management-API";
 
-    private static final String CLINICAL_SUMMARY_PEGACORN_MDR_SUBSYSTEM = "Pegacorn-MDR-Clinical-Summary";
+    private static final String CLINICAL_SUMMARY_PEGACORN_MDR_SUBSYSTEM = "Pegacorn-FHIRPlace-MDR-Clinical-Summary";
     private static final String CLINICAL_SUMMARY_PEGACORN_MDR_SUBSYSTEM_VERSION = "4.0.1";
-    private static final String CLINICAL_SUMMARY_PEGACORN_MDR_EXTERNALISED_SERVICE = "Pegacorn-MDR-Clinical-Summary";
-    private static final String CLINICAL_SUMMARY_PEGACORN_MDR_SERVICE = "sum-fhirplace";
-    private static final String CLINICAL_SUMMARY_PEGACORN_MDR_PROCESSING_PLANT = "sum-fhirplace";
+    private static final String CLINICAL_SUMMARY_PEGACORN_MDR_EXTERNALISED_SERVICE = "Pegacorn-FHIRPlace-MDR-Clinical-Summary";
+    private static final String CLINICAL_SUMMARY_PEGACORN_MDR_SERVICE = "fhirplace-sum-fhirplace";
+    private static final String CLINICAL_SUMMARY_PEGACORN_MDR_PROCESSING_PLANT = "fhirplace-sum-fhirplace";
     private static final String CLINICAL_SUMMARY_PEGACORN_MDR_PROCESSING_PLANT_VERSION = "4.0.1";
-    private static final String CLINICAL_SUMMARY_PEGACORN_MDR_ENDPOINT_FHIR_API = "Pegacorn-MDR-Clinical-Summary-API";
+    private static final String CLINICAL_SUMMARY_PEGACORN_MDR_ENDPOINT_FHIR_API = "Pegacorn-FHIRPlace-MDR-Clinical-Summary-API";
 
-    private static final String CLINICAL_DIAGNOSTICS_PEGACORN_MDR_SUBSYSTEM = "Pegacorn-MDR-Clinical-Diagnostics";
+    private static final String CLINICAL_DIAGNOSTICS_PEGACORN_MDR_SUBSYSTEM = "Pegacorn-FHIRPlace-MDR-Clinical-Diagnostics";
     private static final String CLINICAL_DIAGNOSTICS_PEGACORN_MDR_SUBSYSTEM_VERSION = "4.0.1";
-    private static final String CLINICAL_DIAGNOSTICS_PEGACORN_MDR_EXTERNALISED_SERVICE = "Pegacorn-MDR-Clinical-Diagnostics";
-    private static final String CLINICAL_DIAGNOSTICS_PEGACORN_MDR_SERVICE = "diag-fhirplace";
-    private static final String CLINICAL_DIAGNOSTICS_PEGACORN_MDR_PROCESSING_PLANT = "diag-fhirplace";
+    private static final String CLINICAL_DIAGNOSTICS_PEGACORN_MDR_EXTERNALISED_SERVICE = "Pegacorn-FHIRPlace-MDR-Clinical-Diagnostics";
+    private static final String CLINICAL_DIAGNOSTICS_PEGACORN_MDR_SERVICE = "fhirplace-diag-fhirplace";
+    private static final String CLINICAL_DIAGNOSTICS_PEGACORN_MDR_PROCESSING_PLANT = "fhirplace-diag-fhirplace";
     private static final String CLINICAL_DIAGNOSTICS_PEGACORN_MDR_PROCESSING_PLANT_VERSION = "4.0.1";
-    private static final String CLINICAL_DIAGNOSTICS_PEGACORN_MDR_ENDPOINT_FHIR_API = "Pegacorn-MDR-Clinical-Diagnostics-API";
+    private static final String CLINICAL_DIAGNOSTICS_PEGACORN_MDR_ENDPOINT_FHIR_API = "Pegacorn-FHIRPlace-MDR-Clinical-Diagnostics-API";
 
-    private static final String CLINICAL_MEDICATIONS_PEGACORN_MDR_SUBSYSTEM = "Pegacorn-MDR-Clinical-Medications";
+    private static final String CLINICAL_MEDICATIONS_PEGACORN_MDR_SUBSYSTEM = "Pegacorn-FHIRPlace-MDR-Clinical-Medications";
     private static final String CLINICAL_MEDICATIONS_PEGACORN_MDR_SUBSYSTEM_VERSION = "4.0.1";
-    private static final String CLINICAL_MEDICATIONS_PEGACORN_MDR_EXTERNALISED_SERVICE = "Pegacorn-MDR-Clinical-Medications";
-    private static final String CLINICAL_MEDICATIONS_PEGACORN_MDR_SERVICE = "med-fhirplace";
-    private static final String CLINICAL_MEDICATIONS_PEGACORN_MDR_PROCESSING_PLANT = "med-fhirplace";
+    private static final String CLINICAL_MEDICATIONS_PEGACORN_MDR_EXTERNALISED_SERVICE = "Pegacorn-FHIRPlace-MDR-Clinical-Medications";
+    private static final String CLINICAL_MEDICATIONS_PEGACORN_MDR_SERVICE = "fhirplace-med-fhirplace";
+    private static final String CLINICAL_MEDICATIONS_PEGACORN_MDR_PROCESSING_PLANT = "fhirplace-med-fhirplace";
     private static final String CLINICAL_MEDICATIONS_PEGACORN_MDR_PROCESSING_PLANT_VERSION = "4.0.1";
-    private static final String CLINICAL_MEDICATIONS_PEGACORN_MDR_ENDPOINT_FHIR_API = "Pegacorn-MDR-Clinical-Medications-API";
+    private static final String CLINICAL_MEDICATIONS_PEGACORN_MDR_ENDPOINT_FHIR_API = "Pegacorn-FHIRPlace-MDR-Clinical-Medications-API";
 
-    private static final String CLINICAL_CARE_PROVISION_PEGACORN_MDR_SUBSYSTEM = "Pegacorn-MDR-Clinical-CareProvision";
+    private static final String CLINICAL_CARE_PROVISION_PEGACORN_MDR_SUBSYSTEM = "Pegacorn-FHIRPlace-MDR-Clinical-CareProvision";
     private static final String CLINICAL_CARE_PROVISION_PEGACORN_MDR_SUBSYSTEM_VERSION = "4.0.1";
-    private static final String CLINICAL_CARE_PROVISION_PEGACORN_MDR_EXTERNALISED_SERVICE = "Pegacorn-MDR-Clinical-CareProvision";
-    private static final String CLINICAL_CARE_PROVISION_PEGACORN_MDR_SERVICE = "care-fhirplace";
-    private static final String CLINICAL_CARE_PROVISION_PEGACORN_MDR_PROCESSING_PLANT = "care-fhirplace";
+    private static final String CLINICAL_CARE_PROVISION_PEGACORN_MDR_EXTERNALISED_SERVICE = "Pegacorn-FHIRPlace-MDR-Clinical-CareProvision";
+    private static final String CLINICAL_CARE_PROVISION_PEGACORN_MDR_SERVICE = "fhirplace-clinical-careprovisioning";
+    private static final String CLINICAL_CARE_PROVISION_PEGACORN_MDR_PROCESSING_PLANT = "fhirplace-clinical-careprovisioning";
     private static final String CLINICAL_CARE_PROVISION_PEGACORN_MDR_PROCESSING_PLANT_VERSION = "4.0.1";
-    private static final String CLINICAL_CARE_PROVISION_PEGACORN_MDR_ENDPOINT_FHIR_API = "Pegacorn-MDR-Clinical-CareProvision-API";
+    private static final String CLINICAL_CARE_PROVISION_PEGACORN_MDR_ENDPOINT_FHIR_API = "Pegacorn-FHIRPlace-MDR-Clinical-CareProvision-API";
 
-    private static final String CLINICAL_REQUEST_AND_RESPONSE_PEGACORN_MDR_SUBSYSTEM = "Pegacorn-MDR-Clinical-RequestAndResponse";
+    private static final String CLINICAL_REQUEST_AND_RESPONSE_PEGACORN_MDR_SUBSYSTEM = "Pegacorn-FHIRPlace-MDR-Clinical-RequestAndResponse";
     private static final String CLINICAL_REQUEST_AND_RESPONSE_PEGACORN_MDR_SUBSYSTEM_VERSION = "4.0.1";
-    private static final String CLINICAL_REQUEST_AND_RESPONSE_PEGACORN_MDR_EXTERNALISED_SERVICE = "Pegacorn-MDR-Clinical-RequestAndResponse";
-    private static final String CLINICAL_REQUEST_AND_RESPONSE_PEGACORN_MDR_SERVICE = "randr-fhirplace";
-    private static final String CLINICAL_REQUEST_AND_RESPONSE_PEGACORN_MDR_PROCESSING_PLANT = "randr-fhirplace";
+    private static final String CLINICAL_REQUEST_AND_RESPONSE_PEGACORN_MDR_EXTERNALISED_SERVICE = "Pegacorn-FHIRPlace-MDR-Clinical-RequestAndResponse";
+    private static final String CLINICAL_REQUEST_AND_RESPONSE_PEGACORN_MDR_SERVICE = "fhirplace-cliical-requestandresponse";
+    private static final String CLINICAL_REQUEST_AND_RESPONSE_PEGACORN_MDR_PROCESSING_PLANT = "hirplace-cliical-requestandresponse";
     private static final String CLINICAL_REQUEST_AND_RESPONSE_PEGACORN_MDR_PROCESSING_PLANT_VERSION = "4.0.1";
-    private static final String CLINICAL_REQUEST_AND_RESPONSE_PEGACORN_MDR_ENDPOINT_FHIR_API = "Pegacorn-MDR-Clinical-RequestAndResponse-API";
+    private static final String CLINICAL_REQUEST_AND_RESPONSE_PEGACORN_MDR_ENDPOINT_FHIR_API = "Pegacorn-FHIRPlace-MDR-Clinical-RequestAndResponse-API";
 
-    private static final String FINANCIAL_SUPPORT_PEGACORN_MDR_SUBSYSTEM = "Pegacorn-MDR-Financial-Support";
+    private static final String FINANCIAL_SUPPORT_PEGACORN_MDR_SUBSYSTEM = "Pegacorn-FHIRPlace-MDR-Financial-Support";
     private static final String FINANCIAL_SUPPORT_PEGACORN_MDR_SUBSYSTEM_VERSION = "4.0.1";
-    private static final String FINANCIAL_SUPPORT_PEGACORN_MDR_EXTERNALISED_SERVICE = "Pegacorn-MDR-Financial-Support";
-    private static final String FINANCIAL_SUPPORT_PEGACORN_MDR_SERVICE = "finsup-fhirplace";
-    private static final String FINANCIAL_SUPPORT_PEGACORN_MDR_PROCESSING_PLANT = "finsup-fhirplace";
+    private static final String FINANCIAL_SUPPORT_PEGACORN_MDR_EXTERNALISED_SERVICE = "Pegacorn-FHIRPlace-MDR-Financial-Support";
+    private static final String FINANCIAL_SUPPORT_PEGACORN_MDR_SERVICE = "fhirplace-financial-support";
+    private static final String FINANCIAL_SUPPORT_PEGACORN_MDR_PROCESSING_PLANT = "fhirplace-financial-support";
     private static final String FINANCIAL_SUPPORT_PEGACORN_MDR_PROCESSING_PLANT_VERSION = "4.0.1";
-    private static final String FINANCIAL_SUPPORT_PEGACORN_MDR_ENDPOINT_FHIR_API = "Pegacorn-MDR-Financial-Support-API";
+    private static final String FINANCIAL_SUPPORT_PEGACORN_MDR_ENDPOINT_FHIR_API = "Pegacorn-FHIRPlace-MDR-Financial-Support-API";
 
-    private static final String FINANCIAL_BILLING_PEGACORN_MDR_SUBSYSTEM = "Pegacorn-MDR-Financial-Billing";
+    private static final String FINANCIAL_BILLING_PEGACORN_MDR_SUBSYSTEM = "Pegacorn-FHIRPlace-MDR-Financial-Billing";
     private static final String FINANCIAL_BILLING_PEGACORN_MDR_SUBSYSTEM_VERSION = "4.0.1";
-    private static final String FINANCIAL_BILLING_PEGACORN_MDR_EXTERNALISED_SERVICE = "Pegacorn-MDR-Financial-Billing";
-    private static final String FINANCIAL_BILLING_PEGACORN_MDR_SERVICE = "bill-fhirplace";
-    private static final String FINANCIAL_BILLING_PEGACORN_MDR_PROCESSING_PLANT = "bill-fhirplace";
+    private static final String FINANCIAL_BILLING_PEGACORN_MDR_EXTERNALISED_SERVICE = "Pegacorn-FHIRPlace-MDR-Financial-Billing";
+    private static final String FINANCIAL_BILLING_PEGACORN_MDR_SERVICE = "fhirplace-financial-billing";
+    private static final String FINANCIAL_BILLING_PEGACORN_MDR_PROCESSING_PLANT = "fhirplace-financial-billing";
     private static final String FINANCIAL_BILLING_PEGACORN_MDR_PROCESSING_PLANT_VERSION = "4.0.1";
-    private static final String FINANCIAL_BILLING_PEGACORN_MDR_ENDPOINT_FHIR_API = "Pegacorn-MDR-Financial-Billing-API";
+    private static final String FINANCIAL_BILLING_PEGACORN_MDR_ENDPOINT_FHIR_API = "Pegacorn-FHIRPlace-MDR-Financial-Billing-API";
 
-    private static final String FINANCIAL_PAYMENT_PEGACORN_MDR_SUBSYSTEM = "Pegacorn-MDR-Financial-Payment";
+    private static final String FINANCIAL_PAYMENT_PEGACORN_MDR_SUBSYSTEM = "Pegacorn-FHIRPlace-MDR-Financial-Payment";
     private static final String FINANCIAL_PAYMENT_PEGACORN_MDR_SUBSYSTEM_VERSION = "4.0.1";
-    private static final String FINANCIAL_PAYMENT_PEGACORN_MDR_EXTERNALISED_SERVICE = "Pegacorn-MDR-Financial-Payment";
-    private static final String FINANCIAL_PAYMENT_PEGACORN_MDR_SERVICE = "pmnt-fhirplace";
-    private static final String FINANCIAL_PAYMENT_PEGACORN_MDR_PROCESSING_PLANT = "pmnt-fhirplace";
+    private static final String FINANCIAL_PAYMENT_PEGACORN_MDR_EXTERNALISED_SERVICE = "Pegacorn-FHIRPlace-MDR-Financial-Payment";
+    private static final String FINANCIAL_PAYMENT_PEGACORN_MDR_SERVICE = "fhirplace-financial-payment";
+    private static final String FINANCIAL_PAYMENT_PEGACORN_MDR_PROCESSING_PLANT = "fhirplace-financial-payment";
     private static final String FINANCIAL_PAYMENT_PEGACORN_MDR_PROCESSING_PLANT_VERSION = "4.0.1";
-    private static final String FINANCIAL_PAYMENT_PEGACORN_MDR_ENDPOINT_FHIR_API = "Pegacorn-MDR-Financial-Payment-API";
+    private static final String FINANCIAL_PAYMENT_PEGACORN_MDR_ENDPOINT_FHIR_API = "Pegacorn-FHIRPlace-MDR-Financial-Payment-API";
 
-    private static final String FINANCIAL_GENERAL_PEGACORN_MDR_SUBSYSTEM = "Pegacorn-MDR-Financial-General";
+    private static final String FINANCIAL_GENERAL_PEGACORN_MDR_SUBSYSTEM = "Pegacorn-FHIRPlace-MDR-Financial-General";
     private static final String FINANCIAL_GENERAL_PEGACORN_MDR_SUBSYSTEM_VERSION = "4.0.1";
-    private static final String FINANCIAL_GENERAL_PEGACORN_MDR_EXTERNALISED_SERVICE = "Pegacorn-MDR-Financial-General";
-    private static final String FINANCIAL_GENERAL_PEGACORN_MDR_SERVICE = "fingen-fhirplace";
-    private static final String FINANCIAL_GENERAL_PEGACORN_MDR_PROCESSING_PLANT = "fingen-fhirplace";
+    private static final String FINANCIAL_GENERAL_PEGACORN_MDR_EXTERNALISED_SERVICE = "Pegacorn-FHIRPlace-MDR-Financial-General";
+    private static final String FINANCIAL_GENERAL_PEGACORN_MDR_SERVICE = "fhirplace-financial-general";
+    private static final String FINANCIAL_GENERAL_PEGACORN_MDR_PROCESSING_PLANT = "fhirplace-financial-general";
     private static final String FINANCIAL_GENERAL_PEGACORN_MDR_PROCESSING_PLANT_VERSION = "4.0.1";
-    private static final String FINANCIAL_GENERAL_PEGACORN_MDR_ENDPOINT_FHIR_API = "Pegacorn-MDR-Financial-General-API";
+    private static final String FINANCIAL_GENERAL_PEGACORN_MDR_ENDPOINT_FHIR_API = "Pegacorn-FHIRPlace-MDR-Financial-General-API";
 
 
     public static String getFoundationConformancePegacornMDRSubsystem() {
@@ -673,4 +684,6 @@ public class PegacornFHIRPlaceMDRComponentNames {
     public static String getFinancialGeneralPegacornMDREndpointFhirApi() {
         return FINANCIAL_GENERAL_PEGACORN_MDR_ENDPOINT_FHIR_API;
     }
+
+
 }
